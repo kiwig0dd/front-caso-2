@@ -1,0 +1,96 @@
+:root {
+    --back: #222222;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas';
+}
+
+body {
+    background: var(--back);
+}
+
+.nav-container {
+    width: 100dvw;
+    background: #ddd;
+    position: fixed;
+    text-align: center;
+
+    border-bottom: 4px solid #000;
+
+    box-shadow: 5px 5px 0px #9b21ff;
+}
+
+.nav-container h1 {
+    font-size: 1rem;
+}
+.fuera-bienvenida {
+    background: #000;
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dentro-bienvenida {
+    background: #ddd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 45dvw;
+    padding: 20px;
+
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+
+    box-shadow: 5px 5px 0px #9b21ff;
+}
+
+.btn-cerrar-bienvenida {
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+
+    background: #ddd;
+}
+
+.btn-cerrar-bienvenida:hover {
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+
+    background: #ccc;
+    cursor: pointer;
+}
+
+.todo-tabla {
+  width: 100dvw;
+  height: 100dvh;
+  padding-top: 50px;
+}
+
+table {
+  background: #ddd;
+  width: 100dvw;
+}
+thead {
+  background: #ccc;
+}
+tbody {
+  background: #ddd
+}
+td {
+  text-align: center;
+}
